@@ -13,9 +13,20 @@
   ],
   "require": {
     "php": "^8.1.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "phpunit/phpunit": "^9.5",
+    "phan/phan": "^5.3",
+    "phpmd/phpmd": "^2.12",
+    "squizlabs/php_codesniffer": "^3.7"
   },
   "config": {
     "bin-dir": "bin"
+  },
+  "scripts": {
+    "check-code": [
+      "@php ./bin/phpcs --standard=PSR1,PSR12 tests/",
+      "@php ./bin/phpcs --standard=PSR1,PSR12 src/",
+      "@php ./bin/phpunit --colors tests"
+    ]
   }
 }
