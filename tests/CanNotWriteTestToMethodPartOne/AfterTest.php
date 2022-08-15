@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace InITWorld\Test\CanNotWriteTestToMethodPartOne;
+namespace InITWorld\Tests\CanNotWriteTestToMethodPartOne;
 
 use InITWorld\CanNotWriteTestToMethodPartOne\After;
 use InITWorld\CanNotWriteTestToMethodPartOne\CustomerDiscountRepository;
