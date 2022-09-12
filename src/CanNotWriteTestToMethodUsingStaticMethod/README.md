@@ -1,0 +1,1 @@
+# Nie mogę napisać testu do metody wywołującej metodę statyczną
